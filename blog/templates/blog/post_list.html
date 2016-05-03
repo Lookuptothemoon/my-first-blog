@@ -1,24 +1,24 @@
+{% load staticfiles %}
 <html>
+
+<!--This is the beginning of the head-->
 	<head>
 		<title>Luna's Blog</title>
-		<style type="text/css">
-			body {
-				color: blue;
-				text-align: center;
-			}
-		</style>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	</head>
+<!--This is the end of the head-->
 
-
-
+<!--This is the beginning of the body of the HTML webpage-->
 	<body>
-		<div>
+		<div id="title">
 			<p><h1>Welcome to Luna's Blog</h1></p>
 		</div>
 		
 		{% for post in posts %}
 			<div>
-				<h1><a href="">{{post.title}}</a></h1>
+				<h1><a href="http://tutorial.djangogirls.org/en/">{{post.title}}</a></h1>
 				<p>{{post.text|linebreaks}}</p>
 				<p>**published: {{post.published_date}}**</p>
 				<br><hr><br><br>
@@ -26,7 +26,6 @@
 		{% endfor %}
 
 	</body>
-	
-	
+<!--This is the end of the body of the HTML webpage-->	
 
 </html>
