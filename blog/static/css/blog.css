@@ -1,9 +1,18 @@
 body {
-	color: red;
+	background-color: black;
 }
 
-#title {
+.page-header {
 	text-align: center;
 	text-decoration: underline;
+	color: red;
+	font-family: Lobster;
 }
 
+.post {
+	color: yellow;
+}
+
+.post h1 a{
+	color: orange;
+}
