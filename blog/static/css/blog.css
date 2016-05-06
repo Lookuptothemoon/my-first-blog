@@ -1,18 +1,90 @@
+/*
+HTML Hierarchy
+
+-head
+-body
+	-page-header
+		-p
+			-h1
+	-content container
+		-row
+			-col-md-8
+				-post
+					-h1
+						-a
+					-p
+					-date
+*/
+
 body {
-	background-color: black;
+	background-color: #E5E4E2;
 }
 
 .page-header {
 	text-align: center;
-	text-decoration: underline;
-	color: red;
-	font-family: Lobster;
+	color: white;
+	background-color: #666362;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    font-family: "Lobster", cursive;
+    color: white;
+    font-size: 50pt;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.content {
+    margin-left: 375px;
+}
+
+.post p {
+	width: 100%;
+}
+
+.post h1 a {
+	color: orange;
+	font-family: Century Gothic;
+}
+
+.date {
+	color: orange;
+	font-family: Arial Black;
+}
+
+/* Check to see what this is*/
+.save {
+	float: left;
+}
+
+
+
+
+
+
+
+
+/*
+
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
 }
 
 .post {
-	color: yellow;
+    margin-bottom: 70px;
 }
 
-h1 a{
-	color: orange;
+.post h1 a, .post h1 a:visited {
+    color: #000000;
 }
+*/
