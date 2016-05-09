@@ -14,25 +14,16 @@
 <!--This is the beginning of the body of the HTML webpage-->
 	<body>
 		<div class="page-header">
-			<p><h1>Welcome to Luna's Blog</h1></p>
+			<h1><a href="/">Welcome to Luna's Blog</a></h1>
 		</div>
-		
 		<div class="content container">
-			<div class ="row">
+			<div class="row">
 				<div class="col-md-8">
-					{% for post in posts %}
-						<div class="post">
-							<h1><a href="http://tutorial.djangogirls.org/en/">{{post.title}}</a></h1>
-							<p>{{post.text|linebreaks}}</p>
-							<div class ="date">
-								<p>**published: {{post.published_date}}**</p>
-							</div><hr>
-						</div>
-					{% endfor %}
+				{% block content %}
+				{% endblock %}
 				</div>
 			</div>
 		</div>
-
 	</body>
 <!--This is the end of the body of the HTML webpage-->	
 
