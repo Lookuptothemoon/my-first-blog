@@ -50,13 +50,25 @@ body {
 	font-family: Comic Sans MS;
 }
 
+.post_detail p{
+	color: black;
+	font-family: Times New Roman;
+	font-size: 15px;
+}
+
 .post h1 a, .post h1 a:visited {
 	color: orange;
 	font-family: Century Gothic;
 }
 
+.post h1 {
+	color: blue;
+	font-family: Century Gothic;
+}
+
 .date {
-	font-family: Arial Black;
+	font-family: Times New Roman;
+	color: green;
 }
 
 .date p {
